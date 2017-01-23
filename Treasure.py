@@ -1,3 +1,5 @@
+import sys
+
 try:
     t=int(raw_input())
 except ValueError:
@@ -17,7 +19,9 @@ for i in range(0,t):
 		
 	for l in range (0,matrix):
 		for m in range (0,matrix):
-			print (mat_list[l][m])
+			sys.stdout.write(mat_list[l][m])
+			sys.stdout.write(" ")
+		print""
 			
 	#print (mat_list)
 			
